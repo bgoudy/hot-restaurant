@@ -12,7 +12,7 @@ var PORT = 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Routing
+// Routing for HTML
 app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "/html/home.html"));
 });
