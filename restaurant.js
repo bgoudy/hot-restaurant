@@ -15,5 +15,5 @@ app.use(express.json());
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {
-  console.log("Hello, App listening on PORT " + PORT + "Link: localhost:" + PORT);
+  console.log("Hello, App listening on PORT " + PORT + "\n Link: localhost:" + PORT);
 });
