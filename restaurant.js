@@ -17,11 +17,11 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "/html/home.html"));
 });
 
-app.get("/", function(req, res) {
+app.get("/reserve", function(req, res) {
   res.sendFile(path.join(__dirname, "/html/reserve.html"));
 });
 
-app.get("/", function(req, res) {
+app.get("/table", function(req, res) {
   res.sendFile(path.join(__dirname, "/html/table.html"));
 });
 
