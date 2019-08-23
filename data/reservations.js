@@ -1,4 +1,5 @@
-var reservations = [
+var reservations = 
+[
     {
         name: "Thornton",
         partyNun: 5
@@ -6,7 +7,8 @@ var reservations = [
 
     {
         name: "Williams",
-        partNum: 10,
-
+        partNum: 10
     }
-]
+];
+
+module.exports = reservations;

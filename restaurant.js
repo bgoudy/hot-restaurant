@@ -8,6 +8,9 @@ var path = require("path");
 var app = express();
 var PORT = 3000;
 
+var reservations = require("./data/reservations.js");
+var waitlist = require("./data/waitlist.js");
+
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -23,6 +26,15 @@ app.get("/reserve", function(req, res) {
 
 app.get("/table", function(req, res) {
   res.sendFile(path.join(__dirname, "/html/table.html"));
+});
+
+// API Routing
+app.get("/data/reservations.js", function(req, res) {
+  res.json(reservations);
+});
+
+app.get("/data/waitlist.js", function(req, res) {
+  res.json(waitlist);
 });
 
 // Starts the server to begin listening

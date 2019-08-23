@@ -13,3 +13,5 @@ var waitlist = [
         time: ""
     }
 ]
+
+module.exports = waitlist;
