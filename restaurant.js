@@ -28,5 +28,5 @@ app.get("/table", function(req, res) {
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {
-  console.log("Hello, App listening on PORT " + PORT + "\n Link: localhost:" + PORT);
+  console.log("Hello, App listening on PORT " + PORT + "\nLink: localhost:" + PORT);
 });
